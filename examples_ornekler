@@ -1,0 +1,673 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+//>>Tüm kodlar bu araya yazılacak!!!!
+  return 0;
+}
+//////////////////////////////////////////////////////////////////////
+  string ad="Emir Cihan";
+  string soyad="Alper";
+  int yas=36;
+  cout<<ad<<endl;
+  cout<<soyad;
+  cout<<"\n";
+  cout<<yas;
+  cout<<endl<<"Adınız: "<<ad<<endl<<"Soyadınız: "<<soyad<<"\n"<<"Yaşınız: "<<yas;
+  cout<<"\n\n";
+
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////// 
+  int a=10,b=20,c=30;
+  cout<<"a+b+c= "<<a+b+c;
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////  
+  //dairenin alanı pi*r*r
+  //pi 3,14 olacak r de 5 olacak
+  const double pi =3.14;     // double yerine float ta olur. "const" sabit değer vermek için.
+  int r=5;
+  cout<<"Dairenin alanı: "<<pi*r*r;
+  cout<<endl<<"Çemberin çevresi: "<<2*pi*2;
+  //kare kenar uzubluğu a=10
+  //dikdörtgen kenar uzunlukları a=5, b=10
+  cout<<endl<<"Karenin alanı: "<<a*a;
+  cout<<endl<<"Karenin çevresi: "<<4*a;
+  cout<<endl<<"Dikdörtgenin alanı: "<<a*b;
+  cout<<endl<<"Dikdötgenin çevresi: "<<a+a+b+b;
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////  
+  string adiniz,soyadiniz;
+  int yasiniz;
+  cout<<"Lütfen adınızı giriniz: ";
+  cin>>adiniz;		//cin veri girişi için kullanılır.
+  cout<<endl<<"Lütfen soyadınızı giriniz: ";
+  cin>>soyadiniz;
+  cout<<endl<<"Lütfen yaşınızı giriniz: ";
+  cin>>yasiniz;
+  cout<<endl<<"isminiz: "<<adiniz<<endl<<"Soyisminiz: "<<soyadiniz<<endl<<"Yaşınız: "<<yasiniz;
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////  
+  //const float pi=3.14; ==>pi zaten tanımlı
+  int yr,x,y,z;
+  cout<<"Lütfen dairenin yarıçapını (yr) giriniz: ";
+  cin>>yr;
+  cout<<endl<<"Lütfen karenin kenar uzunuluğunu (x) giriniz: ";
+  cin>>x;
+  cout<<endl<<"Lütfen karenin kenar uzunuluklarını (y ve z) giriniz: ";
+  cin>>y;
+  cin>>z;
+  cout<<endl<<"Dairenin alanı: "<<pi*yr*yr<<endl<<"Çemberin çevresi: "<<2*pi*yr<<endl<<"Karenin alanı: "<<x*x<<endl<<"Karenin çevresi: "<<4*x<<endl<<"Dikdörtgenin alanı: "<<y*z<<endl<<"Dikdörtgenin çevresi: "<<y+y+z+z;
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////  
+  int aa=5,bb=10;
+  cout<<aa+bb<<endl;	//toplama
+  cout<<aa-bb<<endl;	//çıkarma
+  cout<<aa*bb<<endl;	//çarpma
+  cout<<aa/bb<<endl;	//bölme
+  cout<<aa++<<endl;	//önce yaz sonra topla yani 5 yaz ve 1 artır
+  cout<<++aa<<endl;	//önce 1 artır sonra yaz yani 7
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //klavyeden girilen sayı çiftse 0, değilse 1 yazsın olsun
+  int say1;
+  cout<<"Sayı giriniz: ";
+  cin>>say1;
+  cout<<(say1%2);  // () içindeki ifade şart sağlandığı zaman 1, değilse 0  yazar
+  cout<<"\n\n";
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+  //klavyeden girilen 2 sayıdan büyük olanını ekrana yazan c++ komutları
+  int sayi1,sayi2;
+  cout<<"Lütfen iki sayı giriniz: "<<endl;
+  cin>>sayi1;
+  cin>>sayi2;
+  if (sayi1>sayi2)
+  {
+    cout<<sayi1;
+  }
+  else if (sayi1<sayi2)
+  {
+    cout<<sayi2;
+  }
+  else
+  {
+    cout<<"Sayılar eşit";
+  }
+  cout<<"\n\n";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//0-100 arasındaki notları 5 lik sisteme çevirme
+//girilen not o-25 arası 0 / 26-44 arası 1 / 45-54 arası 2 / 55-69 arası 3 / 70-84 arası 4 / 85-100 arası 5
+int notunuz;
+cout<<"Notunuzu giriniz: ";
+cin>>notunuz;
+if (notunuz>0 && notunuz<=100)
+{
+    if (notunuz>0 && notunuz<=25)
+    {
+        cout<<"Notunuz: 0";
+    }
+    else if (notunuz>25 && notunuz<=44)
+    {
+        cout<<"Notunuz: 1";
+    }
+    else if (notunuz>44 && notunuz<=54)
+    {
+        cout<<"Notunuz: 2";
+    }
+    else if (notunuz>54 && notunuz<=69)
+    {
+        cout<<"Notunuz: 3";
+    }
+    else if (notunuz>69 && notunuz<=84)
+    {
+        cout<<"Notunuz: 4";
+    }
+    else if (notunuz>84 && notunuz<=100)
+    {
+        cout<<"Notunuz: 5";
+    }
+}
+    else
+    {
+        cout<<"Lütfen 0-100 arası değer giriniz.";
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+string name, password;
+cout<<"Adınızı giriniz: ";
+cin>>name;
+cout<<"Şifrenizi giriniz: ";
+cin>>password;
+
+if((name=="Ertev")&&(password=="1234"))
+  {
+    cout<<"Hoşgeldiniz";
+  }
+  else
+  {
+    cout<<"Kullanıcı adı veya şifre hatalı";
+  }
+  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+int saat;
+cout<<"Saati giriniz: ";
+cin>>saat;
+if (saat>0 && saat<=24)
+{
+    if (saat>0 && saat<=8)
+    {
+        cout<<"Uyku vakti";
+    }
+    else if (saat>8 && saat<=12)
+    {
+        cout<<"Günaydın";
+    }
+    else if (saat>12 && saat<=18)
+    {
+        cout<<"İyi Günler";
+    }
+    else if (saat>18 && saat<=24)
+    {
+        cout<<"İyi Geceler";
+    }
+}
+    else
+    {
+        cout<<"0-24 arası değer giriniz.";
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+string cinsiyet, durum;
+cout<<"Lüften cinsiyetinizi giriniz(1- Kadın, 2- Erkek): ";
+cin>>cinsiyet;
+/*if (cinsiyet=="1")
+{
+    cout<<"Kadın seçildi";
+}
+else
+{
+    cout<<"Erkek seçildi";
+}*/
+durum=cinsiyet=="1"?"Kadın seçildi":"Erkek seçildi";
+cout<<durum;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+int gun;
+cout<<"Lütfen gün numarası giriniz (1-7)";
+cin>>gun;
+switch (gun)
+{
+    case 1:
+    cout<<"Pazartesi";
+    break;
+    case 2:
+    cout<<"Salı";
+    break;
+    case 3:
+    cout<<"Çarşamba";
+    break;
+    case 4:
+    cout<<"Perşembe";
+    break;
+    case 5:
+    cout<<"Cuma";
+    break;
+    case 6:
+    cout<<"Cumartesi";
+    break;
+    case 7:
+    cout<<"Pazar";
+    break;
+    default:
+    cout<<"Lütfen 1-7 arası gün giriniz.";
+    break;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+int ay;
+cout<<"Lütfen ay numarası giriniz (1-12)";
+cin>>ay;
+switch (ay)
+{
+    case 1:
+    cout<<"Ocak";
+    break;
+    case 2:
+    cout<<"Şubat";
+    break;
+    case 3:
+    cout<<"Mart";
+    break;
+    case 4:
+    cout<<"Nisan";
+    break;
+    case 5:
+    cout<<"Mayıs";
+    break;
+    case 6:
+    cout<<"Haziran";
+    break;
+    case 7:
+    cout<<"Temmuz";
+    break;
+    case 8:
+    cout<<"Ağustos";
+    break;
+    case 9:
+    cout<<"Eylül";
+    break;
+    case 10:
+    cout<<"Ekim";
+    break;
+    case 11:
+    cout<<"Kasım";
+    break;
+    case 12:
+    cout<<"Aralık";
+    break;
+    default:
+    cout<<"Lütfen 1-12 arası gün giriniz.";
+    break;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+int main()
+{
+for(int j=1;j<=10;j++)
+{
+    cout<<j<<".Ertev\n";
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+for(int j=10;j>=1;j--)
+{
+    cout<<j<<".Emir Cihan Alper\n";
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+int sayimiz;
+for(int i=0;i<3;i++)
+{
+    cout<<(i+1)<<". sayıyı giriniz: ";
+    cin>>sayimiz;
+    if(sayimiz%2==0)
+    {
+    cout<<"Sayı çifttir."<<endl;
+    }
+    else
+    {
+    cout<<"Sayı tektir."<<endl;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//25-45 arasındaki çift sayıları ekrana yazınız
+//76-96 arasındaki tek sayıları ekrana yaıznız
+for(int i=25;i<46;i++)
+{
+    if(i%2==0)
+    {
+    cout<<i<<endl;
+    }
+}
+for(int j=76;j<96;j++)
+{
+    if(j%2==1)
+    {
+    cout<<j<<endl;
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//25-45 arasındaki çift sayıları ve adedini ekrana yazınız
+//76-96 arasındaki tek sayıları ve adedini ekrana yazınız
+int ciftler=0;
+int tekler=0;
+cout<<"25-45 arasındaki çift sayılar ve adetleri ekrana yazdırılıyor"<<endl;
+for(int i=25;i<45;i++)
+{
+    if(i%2==0)
+    {
+    ciftler++;
+    cout<<i<<endl;
+    }
+}
+cout<<"Çiftlerin adedi: "<<ciftler<<endl;
+cout<<"76-96 arasındaki tek sayılar ve adetleri ekrana yazdırılıyor"<<endl;
+for(int j=76;j<96;j++)
+{
+    if(j%2==1)
+    {
+    tekler++;
+    cout<<j<<endl;
+    }
+}
+cout<<"Teklerin adedi: "<<tekler<<endl;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//25-45 arasındaki çift sayıları, adedini ve sayıların toplamını ekrana yazınız
+//76-96 arasındaki tek sayıları, adedini ve sayıların toplamını ekrana yazınız
+int ciftler=0;
+int cifttoplam=0;
+int tekler=0;
+int tektoplam=0;
+cout<<"25-45 arasındaki çift sayılar, adetleri ve toplamları ekrana yazdırılıyor"<<endl;
+for(int i=25;i<45;i++)
+{
+    if(i%2==0)
+    {
+    ciftler++;
+    cout<<i<<endl;
+    cifttoplam+=i;
+    }
+}
+cout<<"Çiftlerin adedi: "<<ciftler<<endl;
+cout<<"Çift sayıların toplamı: "<<cifttoplam<<endl;
+cout<<"76-96 arasındaki tek sayılar, adetleri ve toplamları ekrana yazdırılıyor"<<endl;
+for(int j=76;j<96;j++)
+{
+    if(j%2==1)
+    {
+    tekler++;
+    cout<<j<<endl;
+    tektoplam+=j;
+    }
+}
+cout<<"Teklerin adedi: "<<tekler<<endl;
+cout<<"Tek sayıların toplamı: "<<tektoplam<<endl;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//25-45 arasındaki çift sayıları, adedini, sayıların toplamını ve ortalamasını ekrana yazınız
+//76-96 arasındaki tek sayıları, adedini, sayıların toplamını ve ortalamasını ekrana yazınız
+int ciftler=0;
+int cifttoplam=0;
+float ciftorta;
+int tekler=0;
+int tektoplam=0;
+float tekorta;
+cout<<"25-45 arasındaki çift sayılar, adetleri ve toplamları ekrana yazdırılıyor"<<endl;
+for(int i=25;i<45;i++)
+{
+    if(i%2==0)
+    {
+    ciftler++;
+    cout<<i<<endl;
+    cifttoplam+=i;
+    }
+}
+cout<<"Çiftlerin adedi: "<<ciftler<<endl;
+cout<<"Çift sayıların toplamı: "<<cifttoplam<<endl;
+ciftorta=cifttoplam/ciftler;
+cout<<"Çift sayıların ortalaması: "<<ciftorta<<endl;
+cout<<"76-96 arasındaki tek sayılar, adetleri ve toplamları ekrana yazdırılıyor"<<endl;
+for(int j=76;j<96;j++)
+{
+    if(j%2==1)
+    {
+    tekler++;
+    cout<<j<<endl;
+    tektoplam+=j;
+    }
+}
+cout<<"Teklerin adedi: "<<tekler<<endl;
+cout<<"Tek sayıların toplamı: "<<tektoplam<<endl;
+tekorta=tektoplam/tekler;
+cout<<"Tek sayıların ortalaması: "<<tekorta<<endl;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//1-10 arasındaki çift sayıları ekrana yazdırma
+for (int i=1;i<=10;i++)
+{
+    if(i%2==1) continue; //tek ise döngünün başına dön
+    cout<<i<<endl;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+//1-10 arasındaki çift sayıları ekrana yazdırma
+cout<<"1-10 arasındaki çift sayıları ekrana yazdırma"<<endl;
+for (int i=1;i<=10;i++)
+{
+    if(i%2==1) continue; //tek ise döngünün başına dön
+    cout<<i<<endl;
+}
+//1-10 arasındaki 5 hariç tek sayıları ekrana yazdırma
+cout<<"1-10 arasındaki 5 hariç tek sayıları ekrana yazdırma"<<endl;
+for (int i=1;i<=10;i++)
+{
+    if(i%2==0) continue;
+    if(i==5) continue;
+    cout<<i<<endl;
+}
+//1-5 arasındaki sayıları ekrana yazdırma
+cout<<"1-5 arasındaki sayıları ekrana yazdırma"<<endl;
+for (int i=1;i<=10;i++)
+{
+    cout<<i<<endl;
+    if(i==5) break;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+string isimler[5]={"Alican","Emir Cihan","İzzet","Eren","Onur"};
+//cout<<isimler[2];   // diziler 0 dan başlar
+for(int i=0;i<5;i++)
+{
+    cout<<isimler[i]<<endl;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+int num [5]={75,94,26,33,48};
+//sayıları ekrana yazdırın
+//tek sayıları ekrana yazdırın
+//çift sayıları ekrana yazdırın
+//tek sayıların adedini ekrana yazdırın
+//çift sayıların toplamını yazdırın
+//teklerin ortlaması
+//çiftlerin ortalaması
+int tekadet=0;
+int ciftadet=0;
+int cifttoplam=0;
+int tektoplam=0;
+float ciftort;
+float tekort;
+
+cout<<"dizideki sayılar: "<<endl;
+for (int i=0;i<5;i++)
+{
+    cout<<num[i]<<endl;
+}
+cout<<"dizideki tek sayılar: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==0) continue;
+    cout<<num[i]<<endl;
+}
+cout<<"dizideki çift sayılar: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==1) continue;
+    cout<<num[i]<<endl;
+}
+cout<<"dizideki tek sayıların adedi: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==0) continue;
+    tekadet++;
+}
+cout<<tekadet<<endl;
+cout<<"dizideki çift sayıların toplamı: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==1) continue;
+    cifttoplam+=num[i];
+}
+cout<<cifttoplam<<endl;
+cout<<"dizideki tek sayıların ortalaması: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==0) continue;    
+    tektoplam+=num[i];
+    tekort=tektoplam/tekadet;
+}
+cout<<tekort<<endl;
+cout<<"dizideki çift sayıların ortalaması: "<<endl;
+for (int i=0;i<5;i++)
+{
+    if(num[i]%2==1) continue; 
+    ciftadet++;  
+}
+ciftort=cifttoplam/ciftadet;
+cout<<ciftort<<endl;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    int sayilar[5]={10,20,30,40,50};
+    string isimler [3]={"Ali","Veli","Mehmet"};
+    cout<<"For ile yazdırma"<<endl;
+    for (int k=0;k<5;k++)
+    {
+        cout<<sayilar[k]<<endl;
+    }
+    cout<<"Foreach ile yazdırma"<<endl;
+    for (int sayi:sayilar)
+    {
+     cout<<sayi<<endl;   
+    }
+    for (string isim:isimler)
+    {
+     cout<<isim<<endl;   
+    }
+ 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int sayilar[5]={1,78,56,77,65};
+    for (int sayac=0;sayac<5;sayac++)
+    {
+        cout<<sayilar[sayac]<<endl;
+    }
+    for (int sayac=0;sayac<sizeof(sayilar)/sizeof(int);sayac++)
+    {
+        cout<<sayilar[sayac]<<endl;
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    int sayilar[5]={1,78,56,77,65};
+    string adlar[3]={"Ali","Veli","Ahmet"};
+    for (int sayac=0;sayac<5;sayac++)
+    {
+        cout<<sayilar[sayac]<<endl;
+    }
+    for (int sayac=0;sayac<sizeof(sayilar)/sizeof(int);sayac++)
+    {
+        cout<<sayilar[sayac]<<endl;
+    }
+    for (int m=0;m<sizeof(adlar)/sizeof(string);m++)
+    {
+        cout<<adlar[m]<<endl;
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//üç nesnemizin x,y,z kordinatlarını tutan diziler tanımlayıp ekrana yazdırınız.
+float nesneler[3][3]={
+    {1,2,3},
+    {4,5,6},
+    {7,8,9}
+    };
+    
+    for (int i=0;i<3;i++)
+    {
+        for (int j=0;j<3;j++)   
+        {
+            cout<<i<<"in ci satır"<<j<<"inci sütun"<<nesneler[i][j]<<endl;
+        }
+    }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//üç öğrencinin adını ve sınav aldığı 2 notlarını tutan diziler
+string adlar [3]={"Ali","Veli","Mehmet"};
+int notlar [3][2]={
+    {70,80},
+    {40,50},
+    {90,100}
+    };
+
+for (int i=0;i<3;i++)
+{
+    
+    cout<<endl<<"ad: "<<adlar[i]<<" "; 
+    for (int j=0;j<2;j++)
+    {
+        cout<<(j+1)<<"'inci notu: "<<notlar[i][j]<<", ";        
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+void ekranayaz()
+{
+    cout<<"Merhaba Ertev";
+}
+
+int main()
+{
+ekranayaz();
+
+return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+void topla() //void int main'in üstünde olmak zorunda
+{
+    int toplam=3+5;
+    cout<<toplam;
+}
+
+int main()
+{
+topla();
+
+return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+void klavyegiristopla() 
+{
+    int s1,s2;
+    cout<<"1. sayıyı giriniz: ";
+    cin>>s1;
+    cout<<"2. sayıyı giriniz: ";
+    cin>>s2;
+    cout<<"Sayıların toplamı: "<<s1+s2;
+}
+
+int main()
+{
+klavyegiristopla();
+
+return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+void toplam(int a, int b) 
+{
+    
+    cout<<"Sayıların toplamı: "<<a+b;
+}
+
+int main()
+{
+    int s1,s2;
+    cout<<"1. sayıyı giriniz: ";
+    cin>>s1;
+    cout<<"2. sayıyı giriniz: ";
+    cin>>s2;
+    toplam(s1,s2);
+
+return 0;
+}
